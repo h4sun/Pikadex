@@ -1,25 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokedex</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="tabs">
-        <button>All Pokemons</button>
-        <button>My Pokemons</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pikadex</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header class="navbar">
+      <div class="navbar-logo">
+        <img src="https://cdn.worldvectorlogo.com/logos/pokemon-23.svg" alt="Logo" />
+      </div>
+      <nav class="navbar-tabs">
+        <button class="active" id="all-pokemons">All Pokemons</button>
+        <button id="my-pokemons">My Pokemons</button>
+      </nav>
+    </header>
+
+    <div class="filter-container" style="padding: 10px 20px; text-align: center;">
+      <input type="text" class="filter-input" placeholder="Search Pokemon by name..." style="width: 300px; padding: 8px; font-size: 16px;">
+      <select class="type-select">
+        <option value="">All Types</option>
+        <option value="normal">Normal</option>
+        <option value="fire">Fire</option>
+        <option value="water">Water</option>
+        <option value="grass">Grass</option>
+        <option value="electric">Electric</option>
+        <option value="ice">Ice</option>
+        <option value="fighting">Fighting</option>
+        <option value="poison">Poison</option>
+        <option value="ground">Ground</option>
+        <option value="flying">Flying</option>
+        <option value="psychic">Psychic</option>
+        <option value="bug">Bug</option>
+        <option value="rock">Rock</option>
+        <option value="ghost">Ghost</option>
+        <option value="dragon">Dragon</option>
+        <option value="dark">Dark</option>
+        <option value="steel">Steel</option>
+        <option value="fairy">Fairy</option>
+      </select>
     </div>
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
-                <p>Pokemon image</p>
-            </div>
-        </div>
-        <div class="flip-card-back">
-            <p>Poke stats</p>
-        </div>
-    </div>
-</body>
+
+    <div id="message" class="message-box"></div>
+    <ul class="card-list"></ul>  
+
+    <script src="script.js"></script>
+  </body>
 </html>
