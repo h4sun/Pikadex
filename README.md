@@ -45,4 +45,4 @@ Feel free to reach out for any issues or suggestions.
 
 **Note:** This project is for educational purposes and uses the free service of PokeAPI.
 
-<img width="1918" height="722" alt="Ekran görüntüsü 2025-06-28 163914" src="https://github.com/user-attachments/assets/390d3980-d8e7-4ae8-a450-69983b52f8b5" />
+<img width="1917" height="845" alt="Ekran görüntüsü 2025-08-05 142521" src="https://github.com/user-attachments/assets/f468a7fc-66ef-4b98-97ee-9c7b8dd3e746" />
